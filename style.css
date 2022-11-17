@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+}
+
+input{
+    margin-bottom: 1.5rem;
+}
+
+.InputsRadio{
+    display: flex;
+    font-size: .5rem;
+    gap: 1.5rem;
+    text-align: center;
+}
+
+.TimeInputs{
+    display: flex;
+    flex-direction: column;
+    margin-top: 1.5rem;
+}
+
+@media only screen and (max-width: 800px){
+    body{
+        background-color: red;
+    }
+}
+
+@media (min-width: 400px) and (max-width: 799px){
+    body{
+        background-color: blue;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    .InputsRadio{
+        gap: 1rem;
+    }
+}
+
+@media only screen and (max-width: 400px){
+    body{
+        background-color: green;
+    }
+
+    .InputsRadio{
+        font-size: .3rem;
+    }
+}

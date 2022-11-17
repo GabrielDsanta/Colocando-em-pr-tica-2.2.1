@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <form action="api.flit.com.br/submeterDados" method="POST">
+            <label for="NameInput">Nome Da Loja</label>
+            <div>
+                <input id="NameInput" placeholder="Nome Da Loja" type="text">
+            </div>
+
+            <label for="Address">Endereço</label>
+            <div>
+                <input id="Address" placeholder="Endereço Da Loja" type="text">
+            </div>
+
+            <label>Dias De Funcionamento</label>
+            <div class="InputsRadio">
+                <div>
+                    <h1>Segunda</h1>
+                    <input id="DayWeek" type="radio">
+                </div>
+
+                <div>
+                    <h1>Terça</h1>
+                    <input id="DayWeek" type="radio">
+                </div>
+
+                <div>
+                    <h1>Quarta</h1>
+                    <input id="DayWeek" type="radio">
+                </div>
+
+                <div>
+                    <h1>Quinta</h1>
+                    <input id="DayWeek" type="radio">
+                </div>
+                
+               <div>
+                    <h1>Sexta</h1>
+                    <input id="DayWeek" type="radio">
+               </div>
+
+                <div>
+                    <h1>Sábado</h1>
+                    <input id="DayWeek" type="radio">
+                </div>
+                
+                <div>
+                    <h1>Domingo</h1>
+                    <input id="DayWeek" type="radio">
+                </div>
+            </div>
+
+            <div class="TimeInputs">
+                <label for="">Horário De Abertura</label>
+                <div>
+                    <input type="time">
+                </div>
+            </div>
+
+            <div class="TimeInputs">
+                <label for="">Horário De Fechamento</label>
+                <div>
+                    <input type="time">
+                </div>
+            </div>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </main>
+    <script src="./script.js"></script>
+</body>
+</html>
