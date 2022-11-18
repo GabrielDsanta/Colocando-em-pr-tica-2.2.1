@@ -1,34 +1,47 @@
 
 
-const inputs = document.querySelectorAll('input')
-const button = document.querySelector('button')
-const inputTextName = document.querySelector('#NameInput')
-const inputTextAddress = document.querySelector('#Address')
+const ButtonsStar = document.querySelectorAll('img')
+const ButtonsRating = document.querySelectorAll('.RatingButton')
 
-inputTextName.value = window.localStorage.getItem("nameTextValue")
-inputTextAddress.value = window.localStorage.getItem("addressTextValue")
-
-for (const iterator of inputs) {
-    iterator.addEventListener('focus', (e) =>{
-        e.target.style.outline = 'solid 1px purple'
-    })
-
-    iterator.addEventListener('blur', (e) =>{
-        e.target.style.outline = ''
+for (const iterator of ButtonsRating) {
+    iterator.addEventListener('click', (e) => {
+        e.preventDefault()
+        iterator.style.backgroundColor = 'yellow'
+        iterator.style.border = 'solid 1px black'
     })
 }
 
-button.addEventListener('click', (e) => {
-    console.log("Preparando Envio...")
+ButtonsStar[1].addEventListener('click', (e) => {
+    e.preventDefault()
+    ButtonsStar[1].src = './assets/icons8-christmas-star-48.png'
 })
 
-inputTextName.addEventListener('keyup', (e) => {
-    window.sessionStorage.setItem("nameTextValue", e.target.value)
-    window.localStorage.setItem("nameTextValue", e.target.value)
+ButtonsStar[2].addEventListener('click', (e) => {
+    e.preventDefault()
+    ButtonsStar[1].src = './assets/icons8-christmas-star-48.png'
+    ButtonsStar[2].src = './assets/icons8-christmas-star-48.png'
 })
 
-inputTextAddress.addEventListener('keyup', (e) => {
-    window.sessionStorage.setItem("addressTextValue", e.target.value)
-    window.localStorage.setItem("addressTextValue", e.target.value)
+ButtonsStar[3].addEventListener('click', (e) => {
+    e.preventDefault()
+    ButtonsStar[1].src = './assets/icons8-christmas-star-48.png'
+    ButtonsStar[2].src = './assets/icons8-christmas-star-48.png'
+    ButtonsStar[3].src = './assets/icons8-christmas-star-48.png'
 })
 
+ButtonsStar[4].addEventListener('click', (e) => {
+    e.preventDefault()
+    ButtonsStar[1].src = './assets/icons8-christmas-star-48.png'
+    ButtonsStar[2].src = './assets/icons8-christmas-star-48.png'
+    ButtonsStar[3].src = './assets/icons8-christmas-star-48.png'
+    ButtonsStar[4].src = './assets/icons8-christmas-star-48.png'
+})
+
+ButtonsStar[5].addEventListener('click', (e) => {
+    e.preventDefault()
+    ButtonsStar[1].src = './assets/icons8-christmas-star-48.png'
+    ButtonsStar[2].src = './assets/icons8-christmas-star-48.png'
+    ButtonsStar[3].src = './assets/icons8-christmas-star-48.png'
+    ButtonsStar[4].src = './assets/icons8-christmas-star-48.png'
+    ButtonsStar[5].src = './assets/icons8-christmas-star-48.png'
+})

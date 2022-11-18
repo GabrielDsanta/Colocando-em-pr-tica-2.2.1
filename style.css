@@ -4,55 +4,101 @@
     box-sizing: border-box;
 }
 
+body{
+    background-color: #EEEEEE;
+}
+
 main{
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100vh;
-    text-align: center;
-}
-
-input{
-    margin-bottom: 1.5rem;
-}
-
-.InputsRadio{
-    display: flex;
-    font-size: .5rem;
-    gap: 1.5rem;
-    text-align: center;
-}
-
-.TimeInputs{
-    display: flex;
     flex-direction: column;
-    margin-top: 1.5rem;
 }
 
-@media only screen and (max-width: 800px){
-    body{
-        background-color: red;
-    }
+header{
+    background-color: #042940;
 }
 
-@media (min-width: 400px) and (max-width: 799px){
-    body{
-        background-color: blue;
-    }
+img{
+    object-fit: contain;
+    margin-left: 3rem;
 }
 
-@media only screen and (max-width: 500px){
-    .InputsRadio{
-        gap: 1rem;
-    }
+input[type = 'email']{
+    height: 2rem;
+    width: 15rem;
+    outline: none;
+    border-radius: 4px;
+    border: 0;
+    padding: .5rem;
 }
 
-@media only screen and (max-width: 400px){
-    body{
-        background-color: green;
-    }
-
-    .InputsRadio{
-        font-size: .3rem;
-    }
+p{
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+    text-align: center;
 }
+
+span{
+    margin-left: .5rem;
+    color: #042940;
+    font-size: 1.1rem;
+}
+
+h1{
+    margin-top: 3rem;
+}
+
+.RatingButton{
+    height: 2rem;
+    width: 2rem;
+    background-color: #FFF;
+    border-radius: 5rem;
+    border: solid 1px yellow;
+    cursor: pointer;
+}
+
+.StarButton{
+    border: none;
+}
+
+.StarButton img{
+    cursor: pointer;
+}
+
+.RowButtonsStar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 4.5rem;
+    margin-top: 2rem;
+}
+.ListNumbers{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2rem;
+}
+
+.SectionInputEmail{
+    margin-top: 4rem;
+    font-size: 1.1rem;
+}
+
+.SendRatingButton{
+    margin-top: 5rem;
+    margin-right: 1rem;
+    border: none;
+    background-color: #042940;
+    color: #FFF;
+    padding: 1.2rem 10rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.ConteinerButtonSubmit{
+    text-align: center;
+}
+
+  

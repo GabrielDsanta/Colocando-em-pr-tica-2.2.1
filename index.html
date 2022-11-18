@@ -4,77 +4,133 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flit Cadastro</title>
     <link rel="stylesheet" href="./style.css">
-    <title>Document</title>
 </head>
 <body>
+    <header>
+        <img width="150" height="150" src="./assets/logo_semsite_semfundo.png" alt="">
+    </header>
+
     <main>
-        <form action="api.flit.com.br/submeterDados" method="POST">
-            <label for="NameInput">Nome Da Loja</label>
+        <section class="SectionInputEmail">
+            <label for="EmailInput">Qual o seu Email ?</label>
             <div>
-                <input id="NameInput" placeholder="Nome Da Loja" type="text">
+                <input type="email">
+            </div>
+        </section>
+
+        <form>
+            <p>
+                Em uma escala de 0 a 10, qual probabilidade de você <br>
+                recomendar nosso curso para um amigo ou conhecido ?
+            </p>
+
+            <div class="ListNumbers">
+                <div>
+                    <span>1</span>
+                    <div>
+                        <button class="RatingButton"></button>
+                    </div>
+                </div>
+
+                <div>
+                    <span>2</span>
+                    <div>
+                        <button class="RatingButton"></button>
+                    </div>
+                </div>
+
+                <div>
+                    <span>3</span>
+                    <div>
+                        <button class="RatingButton"></button>
+                    </div>
+                </div>
+
+                <div>
+                    <span>4</span>
+                    <div>
+                        <button class="RatingButton"></button>
+                    </div>
+                </div>
+
+                <div>
+                    <span>5</span>
+                    <div>
+                        <button class="RatingButton"></button>
+                    </div>
+                </div>
+
+                <div>
+                    <span>6</span>
+                    <div>
+                        <button class="RatingButton"></button>
+                    </div>
+                </div>
+
+                <div>
+                    <span>7</span>
+                    <div>
+                        <button class="RatingButton"></button>
+                    </div>
+                </div>
+
+                <div>
+                    <span>8</span>
+                    <div>
+                        <button class="RatingButton"></button>
+                    </div>
+                </div>
+
+                <div>
+                    <span>9</span>
+                    <div>
+                        <button class="RatingButton"></button>
+                    </div>
+                </div>
+
+                <div>
+                    <span>10</span>
+                    <div>
+                        <button class="RatingButton"></button>
+                    </div>
+                </div>
             </div>
 
-            <label for="Address">Endereço</label>
+            
+            <h1>Em relação a nossa monitoria ao vivo, como você classificaria ?</h1>
+
             <div>
-                <input id="Address" placeholder="Endereço Da Loja" type="text">
+                <span class="RowButtonsStar">
+                    <button class="StarButton">
+                        <img src="./assets/iconmonstr-star-5.svg" alt="">
+                    </button>
+
+                    <button class="StarButton">
+                        <img src="./assets/iconmonstr-star-5.svg" alt="">
+                    </button>
+
+                    <button class="StarButton">
+                        <img src="./assets/iconmonstr-star-5.svg" alt="">
+                    </button> 
+
+                    <button class="StarButton">
+                        <img src="./assets/iconmonstr-star-5.svg" alt="">
+                    </button>
+
+                    <button class="StarButton">
+                        <img src="./assets/iconmonstr-star-5.svg" alt="">
+                    </button>
+                </span>
             </div>
 
-            <label>Dias De Funcionamento</label>
-            <div class="InputsRadio">
-                <div>
-                    <h1>Segunda</h1>
-                    <input id="DayWeek" type="radio">
-                </div>
-
-                <div>
-                    <h1>Terça</h1>
-                    <input id="DayWeek" type="radio">
-                </div>
-
-                <div>
-                    <h1>Quarta</h1>
-                    <input id="DayWeek" type="radio">
-                </div>
-
-                <div>
-                    <h1>Quinta</h1>
-                    <input id="DayWeek" type="radio">
-                </div>
-                
-               <div>
-                    <h1>Sexta</h1>
-                    <input id="DayWeek" type="radio">
-               </div>
-
-                <div>
-                    <h1>Sábado</h1>
-                    <input id="DayWeek" type="radio">
-                </div>
-                
-                <div>
-                    <h1>Domingo</h1>
-                    <input id="DayWeek" type="radio">
-                </div>
+            <div class="ConteinerButtonSubmit">
+                <button type="submit" class="SendRatingButton">Enviar Resposta</button>
             </div>
-
-            <div class="TimeInputs">
-                <label for="">Horário De Abertura</label>
-                <div>
-                    <input type="time">
-                </div>
-            </div>
-
-            <div class="TimeInputs">
-                <label for="">Horário De Fechamento</label>
-                <div>
-                    <input type="time">
-                </div>
-            </div>
-
-            <button type="submit">Enviar</button>
         </form>
     </main>
+
     <script src="./script.js"></script>
 </body>
 </html>
